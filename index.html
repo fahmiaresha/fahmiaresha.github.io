@@ -33,140 +33,148 @@
       text-align: justify;
     }
 
-    .port_btn {
-      width: 200px;
-      height: 60px;
-      background: rgb(252, 194, 85);
-      display: inline-block;
-      border-radius: 30px;
-      text-align: center;
-      line-height: 64px;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      -ms-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      font-size: 16px;
-      color: #ffffff;
+
+    .anout_section_btn .portfolio_btn.btn_yellow {
+      margin-right: 26px;
     }
 
-    /* start portfolio button */
-    .portfolio_btn {
-      position: relative;
-      display: inline-block;
-      outline: none;
-      overflow: hidden;
-      min-width: 200px;
-      height: 60px;
-      background: rgb(252, 194, 85);
-      border-radius: 30px;
-      text-align: center;
-      line-height: 64px;
-      -webkit-transition: all 1s;
-      -moz-transition: all 1s;
-      -ms-transition: all 1s;
-      -o-transition: all 1s;
-      transition: all 1s;
-      font-size: 16px;
-      color: #ffffff;
+    .anout_section_btn .portfolio_btn.btn_yellow {
+      margin-right: 15px;
     }
 
-    .portfolio_btn span {
-      position: relative;
-      display: inline-block;
-      -webkit-transition: all 0.8s;
-      -moz-transition: all 0.8s;
-      -ms-transition: all 0.8s;
-      -o-transition: all 0.8s;
-      transition: all 0.8s;
-      font-family: 'Josefin Sans', sans-serif;
-      font-weight: 600;
-
+    .anout_section_btn .portfolio_btn.btn_yellow {
+      margin-right: 0px;
     }
 
-    .portfolio_btn span.second_text {
-      position: absolute;
-      top: 100%;
-      -webkit-transform: translate3d(0, 0, 0);
-      -moz-transform: translate3d(0, 0, 0);
-      -ms-transform: translate3d(0, 0, 0);
-      -o-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      left: 0;
-      right: 0;
-      margin: auto;
-      color: #fff;
+    
 
+
+      /* start portfolio button */
+      .portfolio_btn {
+        position: relative;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+        min-width: 200px;
+        height: 60px;
+        background: rgb(252, 194, 85);
+        border-radius: 30px;
+        text-align: center;
+        line-height: 64px;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      @media (max-width: 575px) {
+      .portfolio_btn {
+        min-width: 130px;
+        height: 45px;
+        line-height: 47px;
+        font-size: 15px;
+      }
     }
 
-    .portfolio_btn:hover span.first_text {
-      -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
-      transform: translateY(-100%);
-    }
+      .portfolio_btn span {
+        position: relative;
+        display: inline-block;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        -ms-transition: all 0.8s;
+        -o-transition: all 0.8s;
+        transition: all 0.8s;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 600;
 
-    .portfolio_btn:hover span.second_text {
-      top: 0%;
-    }
+      }
 
-    .portfolio_btn:hover {
-      background: #ff517e;
-      color: #ffffff;
-    }
+      .portfolio_btn span.second_text {
+        position: absolute;
+        top: 100%;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: #fff;
 
-    .signature_box {
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
+      }
 
-    .signature_box .signature {
-      margin-left: 35px;
-    }
+      .portfolio_btn:hover span.first_text {
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+      }
 
-    .name h2 {
-      font-size: 18px;
-      padding: 0;
-      padding-bottom: 5px;
-      margin: 0;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      color: #00c8da;
-    }
+      .portfolio_btn:hover span.second_text {
+        top: 0%;
+      }
 
-    .about_tophead {
-      /* margin: 15px 0px 17px 0; */
-      text-transform: capitalize;
-      font-family: 'Josefin Sans';
-      font-weight: 600;
-      font-size: 33px;
-      line-height: 1.3;
-      color: #00c8da;
-    }
+      .portfolio_btn:hover {
+        background: #ff517e;
+        color: #ffffff;
+      }
 
-    .portfolio_btn.btn_red {
-      background-color: rgb(255, 81, 126);
-      -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
-      -moz-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
-      -ms-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
-      -o-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
-      box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
-      color: #fff;
-    }
+      .signature_box {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
 
-    .portfolio_btn.btn_red:hover {
-      background: #fcc255;
-      -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
-      -moz-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
-      -ms-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
-      -o-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
-      box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
-    }
+      .signature_box .signature {
+        margin-left: 35px;
+      }
+
+      .name h2 {
+        font-size: 18px;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: #00c8da;
+      }
+
+      .about_tophead {
+        /* margin: 15px 0px 17px 0; */
+        text-transform: capitalize;
+        font-family: 'Josefin Sans';
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 1.3;
+        color: #00c8da;
+      }
+
+      .portfolio_btn.btn_red {
+        background-color: rgb(255, 81, 126);
+        -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+        -moz-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+        -ms-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+        -o-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+        box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+        color: #fff;
+      }
+
+      .portfolio_btn.btn_red:hover {
+        background: #fcc255;
+        -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+        -moz-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+        -ms-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+        -o-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+        box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+      }
   </style>
 
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
@@ -240,8 +248,8 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img  src="assets/img/profile3.jpg" class="img-fluid" alt="">
-           
+            <img src="assets/img/profile3.jpg" class="img-fluid" alt="">
+
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h2 class="about_tophead">I'm Developer With 1 Years Of Experience.</h2>
@@ -268,11 +276,12 @@
                 <div class="anout_section_btn">
                   <!-- href target blank -->
 
-                  <a href="/cv_test.pdf"  target="_blank" class="portfolio_btn btn_yellow" download>
+                  <a href="/cv_test.pdf" target="_blank" class="portfolio_btn btn_yellow" download>
                     <span class="first_text">Download CV</span>
                     <span class="second_text">Download</span>
                   </a>
-                  <a href="https://api.whatsapp.com/send?phone=+6289634656688&text=Hallo%20M.Fahmi%20Aresha%2C%20Saya%20ingin%20menwarkan%20kerja%20sama%20dengan%20anda.&source=&data="  target="_blank" class="portfolio_btn btn_red" id="redirect_contact">
+                  <a href="https://api.whatsapp.com/send?phone=+6289634656688&text=Hallo%20M.Fahmi%20Aresha%2C%20Saya%20ingin%20menwarkan%20kerja%20sama%20dengan%20anda.&source=&data="
+                    target="_blank" class="portfolio_btn btn_red" id="redirect_contact">
                     <span class="first_text">Hire Me</span>
                     <span class="second_text">Contact</span>
                   </a>
@@ -452,7 +461,7 @@
               </div>
             </div>
 
-            
+
 
           </div>
 
@@ -597,21 +606,24 @@
               <h4>Systems Analyst</h4>
               <h5>2022</h5>
               <p><em>Campaign Application</em></p>
-              <p class="justify">In this project I am responsible for creating business processes, data structures, flows, interfaces and infrastructure of an application.</p>
+              <p class="justify">In this project I am responsible for creating business processes, data structures,
+                flows, interfaces and infrastructure of an application.</p>
             </div>
 
             <div class="resume-item">
               <h4>Programmer</h4>
               <h5>2022</h5>
               <p><em>Yayasan Dana Sosial Al-Falah</em></p>
-              <p class="justify">In this project I am responsible for creating an admin website using the laravel framework. Data is taken from the provided API.</p>
+              <p class="justify">In this project I am responsible for creating an admin website using the laravel
+                framework. Data is taken from the provided API.</p>
             </div>
 
             <div class="resume-item">
               <h4>Systems Analyst</h4>
               <h5>2022</h5>
               <p><em>Human Resource Management</em></p>
-              <p class="justify">In this project I am responsible for making a sequence diagram of a company, namely the human resource management website.</p>
+              <p class="justify">In this project I am responsible for making a sequence diagram of a company, namely the
+                human resource management website.</p>
             </div>
 
             <div class="resume-item">
@@ -898,10 +910,9 @@
             <div class="portfolio-wrap">
               <img src="assets/img/campaign/UI/Location.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/campaign/UI/Location.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Analyst"><i class="bx bx-zoom-in"></i></a>
-                <a href="details_portofolio/campaign.html" title="More Details"><i
-                    class="bx bx-info-circle"></i></a>
+                <a href="assets/img/campaign/UI/Location.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/campaign.html" title="More Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
           </div>
