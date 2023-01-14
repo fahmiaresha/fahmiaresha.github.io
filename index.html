@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio - M.Fahmi Aresha</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/profile.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .justify {
+      text-align: justify;
+    }
+
+    .port_btn {
+      width: 200px;
+      height: 60px;
+      background: rgb(252, 194, 85);
+      display: inline-block;
+      border-radius: 30px;
+      text-align: center;
+      line-height: 64px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    /* start portfolio button */
+    .portfolio_btn {
+      position: relative;
+      display: inline-block;
+      outline: none;
+      overflow: hidden;
+      min-width: 200px;
+      height: 60px;
+      background: rgb(252, 194, 85);
+      border-radius: 30px;
+      text-align: center;
+      line-height: 64px;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -ms-transition: all 1s;
+      -o-transition: all 1s;
+      transition: all 1s;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .portfolio_btn span {
+      position: relative;
+      display: inline-block;
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      -o-transition: all 0.8s;
+      transition: all 0.8s;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 600;
+
+    }
+
+    .portfolio_btn span.second_text {
+      position: absolute;
+      top: 100%;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      left: 0;
+      right: 0;
+      margin: auto;
+      color: #fff;
+
+    }
+
+    .portfolio_btn:hover span.first_text {
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      -o-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+
+    .portfolio_btn:hover span.second_text {
+      top: 0%;
+    }
+
+    .portfolio_btn:hover {
+      background: #ff517e;
+      color: #ffffff;
+    }
+
+    .signature_box {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .signature_box .signature {
+      margin-left: 35px;
+    }
+
+    .name h2 {
+      font-size: 18px;
+      padding: 0;
+      padding-bottom: 5px;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      color: #00c8da;
+    }
+
+    .about_tophead {
+      /* margin: 15px 0px 17px 0; */
+      text-transform: capitalize;
+      font-family: 'Josefin Sans';
+      font-weight: 600;
+      font-size: 33px;
+      line-height: 1.3;
+      color: #00c8da;
+    }
+
+    .portfolio_btn.btn_red {
+      background-color: rgb(255, 81, 126);
+      -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+      -moz-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+      -ms-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+      -o-box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+      box-shadow: 0px 8px 20px 0px rgba(255, 81, 126, 0.3);
+      color: #fff;
+    }
+
+    .portfolio_btn.btn_red:hover {
+      background: #fcc255;
+      -webkit-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+      -moz-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+      -ms-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+      -o-box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+      box-shadow: 0px 8px 20px 0px rgba(255, 196, 85, 0.3);
+    }
+  </style>
+
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">M.Fahmi Aresha</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://id.linkedin.com/public-profile/in/fahmi-aresha-7821a2205?challengeId=AQFN7KoTUC2EvwAAAXgC6dsk1yyyeVO59OQK7PlB8ldgaE2_Uio92q7yx4M0XeHrFIxgIWvjQI68spvAnUhD89w4mqqCDvXmqA&submissionId=48f2f1cd-747a-6916-a061-4bd1c13d6c7a"
+            target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=+6289634656688&text=Hallo%20M.Fahmi%20Aresha&source=&data="
+            target="_blank" class="facebook"><i class="bx bxl-whatsapp"></i></a>
+          <!-- <a href="https://www.facebook.com/muhamad.famy/" target="_blank" class="facebook"><i
+              class="bx bxl-facebook"></i></a> -->
+          <a href="https://www.instagram.com/fahmiaresha/" target="_blank" class="instagram"><i
+              class="bx bxl-instagram"></i></a>
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a>
+          </li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+              <span>Portfolio</span></a></li>
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Hello</h1>
+      <!-- <h1>I'm Fahmi</h1> -->
+      <p>I'm <span class="typed" data-typed-items="Web Developer, Systems Analyst, Mobile Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <!-- <p class="justify">
+            I have interest in website and mobile developers. I have completed several projects related to
+            it.
+          </p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img  src="assets/img/profile.jpg" class="img-fluid" alt="">
+           
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h2 class="about_tophead">I'm Developer With 1 Years Of Experience.</h2>
+
+            <p style="text-align: justify;">
+              I have completed my education at Airlangga University and Brawijaya University, majoring in information
+              systems. I have interest in website and mobile developer. I have completed several projects related to it.
+              The projects I have worked on include lecturer projects, freelance projects, internship projects and
+              college projects.
+              <p>
+                <p style="text-align: justify;">
+                  During my internship I had roles as Programmer, Database Administrator, Systems Analyst and Backend
+                  engineer. I have also completed several certifications such as Junior Web Developer, Full Stack
+                  Developer, Security Awareness Essential and Certified Secure Computer User V2.
+                </p>
+
+                <div class="signature_box">
+                  <div class="name">
+                    <h2>M.Fahmi Aresha</h2>
+                    <p>Website Developer, Systems Analyst &amp; Mobile Developer</p>
+                  </div>
+                </div>
+
+                <div class="anout_section_btn">
+                  <!-- href target blank -->
+
+                  <a href="/cv_test.pdf"  target="_blank" class="portfolio_btn btn_yellow" download>
+                    <span class="first_text">Download CV</span>
+                    <span class="second_text">Download</span>
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=+6289634656688&text=Hallo%20M.Fahmi%20Aresha%2C%20Saya%20ingin%20menwarkan%20kerja%20sama%20dengan%20anda.&source=&data="  target="_blank" class="portfolio_btn btn_red" id="redirect_contact">
+                    <span class="first_text">Hire Me</span>
+                    <span class="second_text">Contact</span>
+                  </a>
+                </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <!-- <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>This is an estimate of my skills to build a website or mobile application.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Object Oriented Programming <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Learning Management System (Moodle) <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">DBMS (MySQL) <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Figma <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Dart <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Java <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Laravel Framework <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Flutter Framework <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Wordpress <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Experience</h2>
+          <p>This is my career path and experience.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <!-- <h3 class="resume-title">Sumary</h3> -->
+            <!-- <div class="resume-item pb-0">
+              <h4>Alex Smith</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Portland par 127,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>alice.barkley@example.com</li>
+              </ul>
+            </div> -->
+
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item">
+              <h4>Brawijaya University</h4>
+              <h5>2021 - 2023</h5>
+              <p class="justify">S1 - Information Systems. (GPA: 3.83)</p>
+            </div>
+            <div class="resume-item">
+              <h4>Airlangga University</h4>
+              <h5>2018 - 2021</h5>
+              <p class="justify">D3 - Information Systems. (GPA: 3.85)</p>
+            </div>
+            <div class="resume-item">
+              <h4>Sman 1 Waru</h4>
+              <h5>2015 - 2018</h5>
+              <p>Science</p>
+            </div>
+
+            <!-- <div class="resume-item">
+              <h4>Smpn 1 taman</h4>
+              <h5>2015 - 2018</h5>
+            </div>
+
+            <div class="resume-item">
+              <h4>SD ma'arif</h4>
+              <h5>2006 - 2008</h5>
+            </div> -->
+
+            <h3 class="resume-title">Organization</h3>
+            <div class="resume-item">
+              <h4>Head of the Himasi scientific division</h4>
+              <h5>2019 - 2020</h5>
+
+              <p class="justify">I am fully responsible for the P3 division in Himasi science.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Staff of the Himasi scientific division</h4>
+              <h5>2018 - 2019</h5>
+
+              <p class="justify">I am in charge of the Himasi community of programmers in this organization.</p>
+            </div>
+
+            <h3 class="resume-title">Internship</h3>
+            <div class="resume-item">
+              <h4>Backend Engineer</h4>
+              <h5>October - Januari 2022</h5>
+              <p><em>DigiTiket </em></p>
+              <p class="justify"> I am responsible for creating an API that will be used in a mobile application.</p>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>April - June 2021</h5>
+              <p><em>Dinas Komunikasi Dan Informatika Provinsi Jawa Timur </em></p>
+              <p class="justify">I am responsible for making CETTAR website management software.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Database Administrator</h4>
+              <h5>July - September 2020</h5>
+              <p><em>Kemiri Water Solution </em></p>
+              <p class="justify">I am responsible for creating the database for the website.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>May - July 2020</h5>
+              <p><em>MI Ma'arif Ponorogo</em></p>
+              <p class="justify">I am responsible for creating a learning website.</p>
+            </div>
+
+
+            <h3 class="resume-title">Certificate</h3>
+
+            <div class="resume-item">
+              <h4>EC-Council</h4>
+              <h5>2021</h5>
+              <p><em>Certified Secure Computer User V2</em></p>
+              <p class="justify">I have completed CSCU certification.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Digital Talent Scholarship KOMINFO</h4>
+              <h5>2021</h5>
+              <p><em>Security Awareness Essential</em></p>
+              <p class="justify">I learned about Foundations of Security, Securing Operating Systems, Internet Security,
+                Securing Network Connections, Securing Email Communications, Data Backup and Disaster Recovery Etc.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Badan Nasional Sertifikasi Profesi</h4>
+              <h5>2021</h5>
+              <p><em>Junior Web Developer</em></p>
+              <p class="justify">I have completed Junior Web Developer certification.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Digital Talent Scholarship KOMINFO</h4>
+              <h5>2021</h5>
+              <p><em>Full Stack Developer</em></p>
+              <p class="justify">I learned about web development, namely HTML, CSS, Javascript, SQL, Python & NodeJS.
+              </p>
+            </div>
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Project Experience </h3>
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2022</h5>
+              <p><em>Campaign Application</em></p>
+              <p class="justify">In this project I am responsible for creating business processes, data structures, flows, interfaces and infrastructure of an application.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2022</h5>
+              <p><em>Yayasan Dana Sosial Al-Falah</em></p>
+              <p class="justify">In this project I am responsible for creating an admin website using the laravel framework. Data is taken from the provided API.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2022</h5>
+              <p><em>Human Resource Management</em></p>
+              <p class="justify">In this project I am responsible for making a sequence diagram of a company, namely the human resource management website.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Tester</h4>
+              <h5>2021</h5>
+              <p><em>Game Ammunition</em></p>
+              <p class="justify">In this project I am responsible for doing black box testing on the gameammunition
+                website and making sequence diagrams.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2021</h5>
+              <p><em>SMAN 3 Metro</em></p>
+              <p class="justify">In this project, I am responsible for creating a website UI for teacher performance
+                reporting information systems and making UML Diagrams such as Activity Diagrams, Class Diagrams and Use
+                Case diagrams.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2021</h5>
+              <p><em>LP3S Book Gallery</em></p>
+              <p class="justify">In this project I am responsible for Whitebox Testing and making UML diagrams, namely
+                activity diagrams, class diagrams, ERD, LRS, sequence diagrams and use case diagrams from the lp3s book
+                gallery website.</p>
+            </div>
+
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2021</h5>
+              <p><em>CETTAR Jatim</em></p>
+              <p class="justify">In this project I am responsible for creating a software project management document
+                for CETTAR Jatim.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2021</h5>
+              <p><em>Sahabat Cafe</em></p>
+              <p class="justify">In this project, I am responsible for adding a sales report feature using the Laravel
+                Framework and MySQL database. This report is generated using the server side.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Systems Analyst</h4>
+              <h5>2021</h5>
+              <p><em>Akasia</em></p>
+              <p class="justify">In this project I am responsible for making UML diagrams, namely system flowcharts, use
+                cases, activity diagrams, class diagrams and sequence diagrams from the akasia website.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Database Administrator</h4>
+              <h5>2020</h5>
+              <p><em>Kemiri Water Solution </em></p>
+              <p class="justify">In this project, I was responsible with designing a database, namely Conceptual Data
+                Model and Physical Data Model. after the design is approved, I implement the design created into the
+                MySQL database.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2020</h5>
+              <p><em>Bagus Store</em></p>
+              <p class="justify">in this project I am responsible for creating a sales information system for problems
+                in this store. This project is built using laravel framework and MySQL database.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2020</h5>
+              <p><em>Queue Application</em></p>
+              <p class="justify">in this project I am responsible for implementing the design that has been made. This
+                project is created using the Android Studio application and the Java language. This application uses the
+                Application Programming Interface (API) from the MySQL database with the backend using the laravel
+                framework.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2020</h5>
+              <p><em>MI Ma'arif Ponorogo</em></p>
+              <p class="justify">In this project, I was responsible with creating an e learning website for the school.
+                I use a learning management system that is Moodle with a MySQL database. starting from inputting course
+                data, teachers, students and modifying the website to completion.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Programmer</h4>
+              <h5>2020</h5>
+              <p><em>Vocational Faculty Of Airlangga University</em></p>
+              <p class="justify">In this project, I am responsible for creating a website backend that is used to change
+                the information on the PKM website. I built the website using the laravel framework and MySQL database.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p class="justify">
+            This is a preview of my website and mobile application that I have created. You can view detailed project
+            information to view the website or mobile application.
+          </p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Website</li>
+              <li data-filter=".filter-mobile">Mobile</li>
+              <li data-filter=".filter-analyst">Analyst</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/si_penjualan/login.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/si_penjualan/login.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/si_penjualan.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/elearning/login1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/elearning/login1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/elearning.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/sahabat_cafe/1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/sahabat_cafe/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/sahabat_cafe.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/toko_online/Screenshot (309).png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/toko_online/Screenshot (309).png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/online_store.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/pkm/dashboard.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/pkm/dashboard.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/pkm.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/ids/barcode_scan1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/ids/barcode_scan1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/ids.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/desain_si_penjualan/CRUD_data_master.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/desain_si_penjualan/CRUD_data_master.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Desain Website"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/desain_si_penjualan.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/kemiri/cdm-1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/kemiri/cdm-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/kemiri.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/akasia/1.PNG" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/akasia/1.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/akasia.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/cettar/gambar (1).jpeg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/cettar/gambar (1).jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/cettar.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/galeri_buku/1.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/galeri_buku/1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/galeri_buku.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/si_pelaporan_kinerja_guru/Class-Diagram/ClassDiagram1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/si_pelaporan_kinerja_guru/Class-Diagram/ClassDiagram1.jpg"
+                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Analyst"><i
+                    class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/si_pelaporan_web.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/hr_managemen/Surat Tugas.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/hr_managemen/Surat Tugas.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/hr_managemen.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-analyst">
+            <div class="portfolio-wrap">
+              <img src="assets/img/campaign/UI/Location.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/campaign/UI/Location.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Analyst"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/campaign.html" title="More Details"><i
+                    class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+            <div class="portfolio-wrap">
+              <img src="assets/img/calculator/calculator.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/calculator/calculator.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Mobile"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/calculator.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+            <div class="portfolio-wrap">
+              <img src="assets/img/antrian/dokter/login_dokter.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/antrian/dokter/login_dokter.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Mobile"><i class="bx bx-zoom-in"></i></a>
+                <a href="details_portofolio/antrian.html" title="More Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><img src="https://img.icons8.com/ios-filled/50/ffffff/laravel.png"/></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section>End Services Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p style="justify">This is the contact you can call. If you need a website or mobile application, I can help
+            you.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Sidoarjo, Indonesia.</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>areshafahm@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Phone:</h4>
+                <p>+6289-63465-6688</p>
+              </div>
+
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+
+
+            <form name="submit-to-google-sheet" class="php-email-form">
+              <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+                <h4 class="alert-heading"><strong>Thank you!</strong> </h4>
+                <p>Your message has been sent.</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <div class="row">
+
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" name="name" id="subject" required>
+                </div>
+
+              </div>
+              <div class="form-group">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button class="send-message" type="submit">Send Message</button>
+                <button class="btn btn-primary d-none btn-loading" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div> -->
+  <!-- </footer>End  Footer -->
+
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> -->
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwRUQPzhtciVDpFfoZKZB2qCaSyE2zzyDQLG96ETTKC_hS6ayeNWYsqWPVO2ly0dCep/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const btnKirim = document.querySelector('.send-message');
+    const btnLoading = document.querySelector('.btn-loading');
+    const myAlert = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      //kalau ada di tambahkan , kalau tdk ada di tambahkan
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => {
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          myAlert.classList.toggle('d-none');
+          form.reset();
+
+
+          console.log('Success!', response)
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
